@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LUUKLA.</title>
+  <meta name="description" content="LUUKLA. Coming soon." />
+  <style>
+    :root{--bg:#F5F2EE;--fg:#111111;}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{
+      background:var(--bg);
+      color:var(--fg);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .wrap{
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:9rem;
+      padding:2rem;
+      text-align:center;
+    }
+    .logo{
+      font-size:clamp(2rem,3vw,3.5rem);
+      font-weight:400;
+      margin:0;
+    }
+    .soon{
+      font-size:clamp(1rem,1.5vw,1.4rem);
+      font-weight:400;
+      letter-spacing:.42em;
+      margin:0;
+      white-space:nowrap;
+    }
+    @media (max-width:600px){
+      .wrap{gap:3.25rem}
+      .logo{font-size:2rem}
+      .soon{font-size:.95rem;letter-spacing:.34em}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1 class="logo">LUUKLA.</h1>
+    <p class="soon">COMING SOON</p>
+  </main>
+</body>
+</html>
